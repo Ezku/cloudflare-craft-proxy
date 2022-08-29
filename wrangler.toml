@@ -2,3 +2,4 @@ name = "cloudflare-craft-proxy" # todo
 workers_dev = true
 compatibility_date = "2022-05-03"
 main = "src/index.ts"
+send_metrics = false
