@@ -5,7 +5,7 @@ const worker = {
     const url = new URL(request.url);
     switch (true) {
       case url.pathname === '/':
-        return Response.redirect(CRAFT_SHARE_URL, 307);
+        return response.redirect(CRAFT_SHARE_URL);
       default:
         return response.json({ pathname: url.pathname });
     }
@@ -13,6 +13,8 @@ const worker = {
 };
 
 const response = {
+  redirect: (destination: string, statusCode: number = 307) =>
+    Response.redirect(destination, statusCode),
   json: (json: Object) =>
     new Response(JSON.stringify(json), {
       headers: {
