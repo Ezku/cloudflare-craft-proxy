@@ -4,8 +4,8 @@ const worker = {
   async fetch(request: Request) {
     const url = new URL(request.url);
     switch (true) {
-      case url.pathname === '':
-        return new Response(`request method: ${request.method}`);
+      case url.pathname === '/':
+        return Response.redirect(CRAFT_SHARE_URL, 307);
       default:
         return response.json({ pathname: url.pathname });
     }
