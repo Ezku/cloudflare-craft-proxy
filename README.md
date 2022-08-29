@@ -1,3 +1,3 @@
-# cloudflare-templates-kqnmjh
+# cloudflare-craft-proxy
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/cloudflare-templates-kqnmjh)
+[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/cloudflare-craft-proxy)
